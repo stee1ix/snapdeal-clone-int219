@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+    <title>Snapdeal</title>
+
+</head>
+
+<body>
+    <div class="top-bar">
+        <h3>India's Fastest Online Shopping Destination</h3>
+        <ul>
+            <li>Gift Cards</li>
+            <li>Help Center</li>
+            <li>Sell on Snapdeal</li>
+            <li><img src="https://img.icons8.com/material-outlined/24/ffffff/android.png" />Download App</li>
+        </ul>
+    </div>
+    <nav>
+        <div class="logo"><img src="./logo.svg" alt="logo"></div>
+        <div class="search">
+            <input type="text" placeholder="Search products & brands" />
+            <button>SEARCH</button>
+        </div>
+        <ul>
+            <li>Cart<img src="https://img.icons8.com/material-outlined/40/ffffff/shopping-cart--v1.png" /></li>
+            <li class="signin" onclick="toggleShow">Sign In<img
+                    src="https://img.icons8.com/material-outlined/40/ffffff/person-male.png" /></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="categories">
+            <div class="top">
+                <h3>TOP CATEGORIES</h3>
+                <ul>
+                    <li><img src="https://img.icons8.com/material-outlined/48/fa314a/discount.png" />All Offers</li>
+                    <li><img src="https://img.icons8.com/color-glass/48/000000/two-smartphones.png" />Mobiles & Tablets
+                    </li>
+                    <li><img
+                            src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/48/26e07f/external-ac-home-appliances-icongeek26-linear-colour-icongeek26.png" />Electronics
+                    </li>
+                    <li><img
+                            src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/48/26e07f/external-computer-gaming-kiranshastry-lineal-color-kiranshastry-1.png" />Computers
+                        & Gaming</li>
+                    <li><img src="https://img.icons8.com/ios-filled/48/26e07f/kitchen.png" />Home & Kitchen</li>
+                </ul>
+            </div>
+            <div class="more">
+                <h3>MORE CATEGORIES</h3>
+                <ul>
+                    <li>Men's Fashion</li>
+                    <li>Women's Fashion</li>
+                    <li>Kid's Fashion</li>
+                    <li>Beauty & Health</li>
+                    <li>Sports</li>
+                    <li>Vehicles</li>
+                    <li>Other Products</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="banner">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <img src="./img1.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="./img2.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="./img3.png" style="width:100%">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <div class="pin-container">
+                    <img src="./pin.png" alt="pin">
+                    <h3>Your Delivery Pincode</h3>
+                    Enter your pincode to check availability and faster delivery options
+                    <input type="text" placeholder="Enter pincode">
+                    <div class="button-wrapper">
+                        <button class="btn-submit">SUBMIT</button>
+                        <button class="btn-next">NEXT</button>
+                    </div>
+                </div>
+            </div>
+            <div class="trending">
+                <h3>TRENDING</h3>
+                <div class="img-container">
+                    <img src="./img4.jpg" alt=""><img src="./img5.jpeg" alt=""><img src="./img6.jpg" alt=""><img
+                        src="./img7.jpg" alt=""><img src="./img8.jpg" alt=""><img src="./img9.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <div class="modal">
+        <div id="login">
+            <h1>SIGN IN</h1>
+            <h1 class="cross" onclick="toggleShow">X</h1>
+            <img src="./login.svg" alt="">
+            <div class="input-wrapper">
+                <input type="text" name="name" id="name" placeholder="Enter name">
+                <input type="password" name="password" id="password" placeholder="Enter password">
+            </div>
+            <button>SIGN IN</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
